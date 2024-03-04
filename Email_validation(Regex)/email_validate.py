@@ -1,0 +1,42 @@
+# Meta Characters
+# [] A set of characters
+# \ Signals a special sequence (can also be used to escape special characters)
+# . Any character (except newline character)
+# ^ Starts with
+# $ Ends with
+# * Zero or more occurrences
+# + One or more occurrences
+# {} Exactly the specified number of occurrences
+# | Either or
+# () Capture and group
+# Special Sequences
+# \A Returns a match if the specified characters are at the beginning of the string
+# \b Returns a match where the specified characters are at the beginning or at the end of a word r” ain\b.”
+# \B Returns a match where the specified characters are present, but NOT at the beginning (or at the end) of a word
+
+# \d Returns a match where the string contains digits (numbers from 0-9)
+# \D Returns a match where the string DOES NOT contain digits
+# \s Returns a match where the string contains a white space character
+# \S Returns a match where the string DOES NOT contain a white space character
+# \w Returns a match where the string contains any word characters (characters from a to Z, digits from 0-9, and the underscore _ character)
+# \W Returns a match where the string DOES NOT contain any word characters
+# \Z Returns a match if the specified characters are at the end of the string
+
+# Email Condition From Here
+
+# a - z
+# 0 - 9
+# . _ time 1
+# @ time 1
+# . position should be 2 or 3 
+
+import re   # importing regex
+email_condition = "^[a-z]+[\._]?[a-z 0-9]+[@]\w+[.]\w{2,3}$"
+while True:
+    user_email = input("Enter Your Email ")
+    if re.search(email_condition, user_email):
+        print("Your Email is Correct")
+        break
+    else:
+        print("Wrong Email")
+        
