@@ -36,4 +36,4 @@ while True:
         b = int(input("Enter Second Number "))
         print("Your Answer ", divide(a,b))
     else:
-        break
+        break           # it will break infinite while loop
