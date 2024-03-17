@@ -4,7 +4,7 @@
 # recursion and while loop
 # increase the steps each time a split is done 
 # condition to track the target 
-# binary search divide list of elemrnt by 2 for finding middle number in list
+# binary search divide list of element by 2 for finding middle number in list
 
 
 def binary_search(list, element):       # for search any element we have to give list without it it will not work and give target by user
