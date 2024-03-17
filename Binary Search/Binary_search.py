@@ -1,4 +1,4 @@
-# Binary Search algoritham is a searching allgoritham to match value in list with given by user 
+# Binary Search algoritham is a searching allgoritham to match value in list with number given by user 
 # a function will take an list and target parameter
 # multiple variables : middle, start, end, steps
 # recursion and while loop
